@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elyusium - Anarchy Minecraft Server</title>
+    <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/yesyfhhf/elyusium-website/92dae435cb6fc8d52874253d1eda921c1428d1a4/server-icon.png">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <style>
+        body {
+            background: linear-gradient(to right, #6b21a8, #7e22ce, #4c1d95);
+            color: #f9fafb;
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+    <header class="bg-black bg-opacity-30 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <img src="https://raw.githubusercontent.com/yesyfhhf/elyusium-website/92dae435cb6fc8d52874253d1eda921c1428d1a4/server-icon.png" alt="Elyusium Icon" class="w-10 h-10 rounded-full">
+                <div>
+                    <h1 class="font-bold text-lg">Elyusium</h1>
+                    <p class="text-xs text-gray-300">Anarchy Minecraft Server</p>
+                </div>
+            </div>
+            <nav class="hidden md:flex gap-6 text-sm">
+                <a href="#about" class="hover:underline">About</a>
+                <a href="#features" class="hover:underline">Features</a>
+                <a href="#blogs" class="hover:underline">Blogs</a>
+                <a href="#owners" class="hover:underline">Owners</a>
+                <a href="#join" class="hover:underline">Join</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-6 py-16 space-y-16">
+        <section class="text-center fade-in relative">
+            <img src="https://raw.githubusercontent.com/yesyfhhf/elyusium-website/92dae435cb6fc8d52874253d1eda921c1428d1a4/server-icon.png" alt="Server Icon" class="w-24 h-24 mx-auto mb-6 rounded-full shadow-lg animate-bounce">
+            <h2 class="text-5xl font-extrabold mb-4">Elyusium</h2>
+            <p class="text-lg text-gray-200 mb-6">Where chaos reigns — the ultimate anarchy Minecraft server.</p>
+            <a href="#join" class="inline-block bg-white text-purple-800 font-semibold px-6 py-3 rounded-lg shadow-lg transform transition hover:scale-105">Join Now</a>
+            <p class="mt-4 text-sm text-gray-300">IP: <span class="font-mono">elyusium.org</span> · Version: 1.20+ · Type: Anarchy</p>
+        </section>
+
+        <section id="features" class="bg-white bg-opacity-10 p-8 rounded-2xl fade-in">
+            <h3 class="text-2xl font-bold mb-4">Server Highlights</h3>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="p-4 bg-white bg-opacity-5 rounded-lg transform transition hover:scale-105">
+                    <h4 class="font-semibold text-lg mb-2">No Rules</h4>
+                    <p class="text-sm text-gray-200">True anarchy — no limitations, no restrictions, no boundaries. Play your way.</p>
+                </div>
+                <div class="p-4 bg-white bg-opacity-5 rounded-lg transform transition hover:scale-105">
+                    <h4 class="font-semibold text-lg mb-2">Stable and Fast</h4>
+                    <p class="text-sm text-gray-200">Optimized for performance with minimal lag and maximum uptime.</p>
+                </div>
+                <div class="p-4 bg-white bg-opacity-5 rounded-lg transform transition hover:scale-105">
+                    <h4 class="font-semibold text-lg mb-2">Community</h4>
+                    <p class="text-sm text-gray-200">Active players, events, and chaos-driven adventures await on our Discord.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="blogs" class="fade-in">
+            <h3 class="text-2xl font-bold mb-4">Latest Blogs</h3>
+            <p class="text-gray-300 mb-6">News, updates, and player stories from Elyusium.</p>
+            <div id="blog-list" class="grid md:grid-cols-3 gap-6"></div>
+        </section>
+
+        <section id="owners" class="bg-white bg-opacity-10 p-8 rounded-2xl text-center fade-in">
+            <h3 class="text-2xl font-bold mb-6">Meet the Owners</h3>
+            <div class="flex flex-wrap justify-center gap-8">
+                <div class="bg-white bg-opacity-10 p-4 rounded-xl w-64 transform transition hover:scale-105">
+                    <img src="https://raw.githubusercontent.com/yesyfhhf/elyusium-website/refs/heads/main/0dad115d252f6bb2f27091974e755924%20(2).png" alt="Lplaysgames" class="w-20 h-20 rounded-full mx-auto mb-3 object-cover">
+                    <h4 class="font-semibold text-lg">Lplaysgames</h4>
+                    <p class="text-sm text-gray-300">Lead owner of the server and the only one with console access.</p>
+                </div>
+                <div class="bg-white bg-opacity-10 p-4 rounded-xl w-64 transform transition hover:scale-105">
+                    <img src="https://raw.githubusercontent.com/yesyfhhf/elyusium-website/refs/heads/main/69866929de8c6bf492c0be2b3578d38c.png" alt="_zvo" class="w-20 h-20 rounded-full mx-auto mb-3 object-cover">
+                    <h4 class="font-semibold text-lg">_zvo</h4>
+                    <p class="text-sm text-gray-300">Well established pvp'er and server owner, knows how to run an anarchy server.</p>
+                </div>
+                <div class="bg-white bg-opacity-10 p-4 rounded-xl w-64 transform transition hover:scale-105">
+                    <img src="https://raw.githubusercontent.com/yesyfhhf/elyusium-website/refs/heads/main/1527905497e8f70d004d5c73957fc2b0.png" alt="AntiHitSelect" class="w-20 h-20 rounded-full mx-auto mb-3 object-cover">
+                    <h4 class="font-semibold text-lg">AntiHitSelect</h4>
+                    <p class="text-sm text-gray-300">Well known griefer and pvper on several anarchy servers, co-owner of the clan Impurion.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="join" class="text-center fade-in">
+            <div class="bg-white bg-opacity-10 p-8 rounded-2xl inline-block">
+                <h3 class="text-2xl font-bold mb-2">Join Elyusium Today</h3>
+                <p class="text-gray-200 mb-4">Connect to <span class="font-mono">elyusium.org</span> and start your journey into chaos.</p>
+                <a href="#" class="inline-block bg-white text-purple-800 font-semibold px-6 py-3 rounded-lg transform transition hover:scale-105">Copy IP</a>
+            </div>
+        </section>
+
+        <footer class="mt-16 text-center text-gray-400 text-sm fade-in">©
+        <script>document.write(new Date().getFullYear())</script> Elyusium — Anarchy Minecraft Server</footer>
+    </main>
+
+    <div id="blog-modal" class="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center hidden z-50">
+        <div class="bg-purple-900 bg-opacity-90 p-8 rounded-xl max-w-lg mx-4">
+            <h4 id="modal-title" class="text-xl font-bold mb-3"></h4>
+            <p id="modal-content" class="text-gray-200 text-sm mb-4"></p>
+            <button onclick="closeModal()" class="bg-white text-purple-800 px-4 py-2 rounded">Close</button>
+        </div>
+    </div>
+
+    <script>
+        window.addEventListener('load', () => {
+            gsap.to('.fade-in', { opacity: 1, y: 0, duration: 1, stagger: 0.2, ease: 'power2.out' });
+        });
+
+       <!-- 📰 BLOGS SECTION -->
+<section class="py-16 px-6 text-center bg-purple-800 bg-opacity-20 fade-in" id="blogs">
+  <h2 class="text-3xl font-bold mb-6 text-purple-300">Latest Blogs</h2>
+
+  <!-- Blog List Container -->
+  <div id="blog-list" class="grid md:grid-cols-3 gap-4 mt-6"></div>
+</section>
+
+<!-- 🪟 BLOG MODAL -->
+<div id="blog-modal" class="hidden fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50">
+  <div class="bg-purple-900 p-8 rounded-lg max-w-lg mx-auto text-center relative">
+    <button onclick="closeModal()" class="absolute top-2 right-2 text-white text-2xl leading-none">&times;</button>
+    <h2 id="modal-title" class="text-2xl font-bold mb-4 text-purple-300"></h2>
+    <p id="modal-content" class="text-gray-200 whitespace-pre-line"></p>
+  </div>
+</div>
+
+<!-- 💻 BLOG SCRIPT -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script>
+  // Fade-in animation for section
+  window.addEventListener('load', () => {
+    gsap.to('.fade-in', { opacity: 1, y: 0, duration: 1, stagger: 0.2, ease: 'power2.out' });
+  });
+
+  // Blog data
+  const blogs = [
+    {
+      title: 'Website is now available!',
+      excerpt: 'News about the new elyusium.org website',
+      content: `Hey everyone, Lplaysgames here — just wanted to let you all know that the new website for Elyusium.org is now live at a GitHub base URL since I'm working on the DNS setup to get it fully live at elyusium.org. It might take a few weeks before that’s done, but for now it's here on a GitHub subdomain. Hope y’all like it! 
+      
+- Lplaysgames`
+    },
+    {
+      title: 'No Blog available',
+      excerpt: 'No Blog available',
+      content: 'No Blog available'
+    },
+    {
+      title: 'No Blog available',
+      excerpt: 'No Blog available',
+      content: 'No Blog available'
+    }
+  ];
+
+  // Render blog cards
+  const blogList = document.getElementById('blog-list');
+  blogs.forEach((blog) => {
+    const div = document.createElement('div');
+    div.className = 'bg-white bg-opacity-5 p-4 rounded-lg cursor-pointer transform transition hover:scale-105 hover:bg-opacity-10';
+    div.innerHTML = `<h4 class="font-semibold mb-2 text-purple-200">${blog.title}</h4><p class="text-sm text-gray-300">${blog.excerpt}</p>`;
+    div.onclick = () => openModal(blog.title, blog.content);
+    blogList.appendChild(div);
+  });
+
+  // Open blog modal
+  function openModal(title, content) {
+    document.getElementById('modal-title').innerText = title;
+    document.getElementById('modal-content').innerText = content;
+    document.getElementById('blog-modal').classList.remove('hidden');
+    gsap.fromTo('#blog-modal .bg-purple-900', { scale: 0.8, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.3 });
+  }
+
+  // Close blog modal
+  function closeModal() {
+    gsap.to('#blog-modal .bg-purple-900', {
+      scale: 0.8,
+      opacity: 0,
+      duration: 0.2,
+      onComplete: () => {
+        document.getElementById('blog-modal').classList.add('hidden');
+      }
+    });
+  }
+</script>
